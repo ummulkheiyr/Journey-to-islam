@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Daily Muslim Practice & Lifestyle - Journey to Islam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Journey to Islam</h1>
+        <p>Your Comprehensive Guide for Muslim Reverts</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="pillars.html">Pillars of Islam</a></li>
+            <li><a href="beliefs.html">Core Beliefs</a></li>
+            <li><a href="practice.html" class="active">Daily Practice</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="product.html">Jurisprudence Course</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="practice" class="section">
+            <h2>Daily Muslim Practice & Lifestyle</h2>
+            <p>Islam is a comprehensive way of life, guiding Muslims in all aspects, from personal conduct and hygiene to social interactions and business ethics. Integrating Islam into your daily routine helps strengthen your connection with Allah and enriches your life.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Prayer (Salah)</h3>
+                    <p>The most direct and consistent act of worship. Maintaining the five daily prayers on time is crucial. Learning the movements, recitations, and meanings will deepen your experience.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Dua (Supplication)</h3>
+                    <p>Regularly making personal prayers and supplications to Allah. Ask for guidance, strength, forgiveness, and everything you need. It's a powerful way to communicate with your Creator.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Reading & Reflecting on Quran</h3>
+                    <p>Engaging with the Holy Quran daily, even if just a few verses. Learn to recite it, understand its meanings through translation and commentary (tafsir), and implement its teachings.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Remembrance of Allah (Dhikr)</h3>
+                    <p>Keeping Allah in mind throughout your day through various phrases like "SubhanAllah" (Glory be to Allah), "Alhamdulillah" (All praise is due to Allah), "Allahu Akbar" (Allah is the Greatest), and "La ilaha illallah" (There is no god but Allah).</p>
+                </div>
+                <div class="info-card">
+                    <h3>Good Character & Ethics (Akhlaq)</h3>
+                    <p>Striving to embody the best of manners, honesty, truthfulness, kindness, patience, and compassion towards all creation. The Prophet Muhammad (peace be upon him) was the best example of character.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Modesty (Hayah)</h3>
+                    <p>Adhering to principles of modesty in dress, speech, and conduct for both men and women. This promotes respect, dignity, and focuses on inner character rather than outward appearance.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Halal & Haram</h3>
+                    <p>Understanding and adhering to what is permissible (halal) and impermissible (haram) in Islam, especially concerning food, drink, and financial transactions. This ensures purity and blessings in your livelihood.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Seeking Knowledge</h3>
+                    <p>Continuously learning about Islam from authentic sources and qualified scholars. Knowledge is a light that guides you to act correctly and with understanding.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Community Engagement</h3>
+                    <p>Engaging with the local Muslim community (mosque, Islamic center) for support, learning, mutual encouragement, and participating in communal prayers and events.</p>
+                </div>
+            </div>
+            <p>Embracing these practices gradually and consistently will help you build a strong and fulfilling Islamic lifestyle.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Journey to Islam. All rights reserved. | Built with Peace & Knowledge</p>
+    </footer>
+
+    <script>
+        // Simple script to highlight active nav link based on current page
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
