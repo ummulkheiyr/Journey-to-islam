@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Journey to Islam - A Guide for Reverts</title>
+    <title>Welcome to Journey to Islam</title>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
@@ -26,36 +26,23 @@
 
     <main class="container">
         <section id="welcome" class="section">
-            <h2>Welcome, Dear Revert!</h2>
-            <p>Assalamu Alaikum (Peace be upon you)! We extend our warmest welcome to you as you embark on this beautiful journey of discovering Islam.</p>
-            <p>This website is designed to provide you with essential information, guidance, and resources to help you understand and practice your new faith. Explore the links above to learn more about the foundations and practices of Islam.</p>
-            <p>Embracing Islam is a profound and blessed decision. Take your time, learn at your own pace, and know that there is a vast and supportive community ready to assist you. May Allah (God) ease your path and grant you immense blessings in this life and the hereafter.</p>
-        </section>
-
-        <section class="section quick-links">
-            <h2>Start Your Journey Here</h2>
+            <h2>Welcome to Your Journey to Islam</h2>
+            <p>Assalamu Alaikum (Peace be upon you)! This website is designed as a comprehensive guide for new Muslims and those exploring the beautiful faith of Islam. We aim to provide clear, authentic, and accessible information to help you understand and practice Islam.</p>
             <div class="info-grid">
                 <div class="info-card">
-                    <h3><a href="pillars.html">The Five Pillars</a></h3>
-                    <p>Learn the fundamental practices of Islam.</p>
+                    <h3>Starting Your Path</h3>
+                    <p>Discover the foundational principles and practices that form the bedrock of Islam. Whether you're just curious or have recently embraced Islam, we're here to support your journey.</p>
                 </div>
                 <div class="info-card">
-                    <h3><a href="beliefs.html">Core Beliefs</a></h3>
-                    <p>Understand the foundational articles of faith.</p>
+                    <h3>Explore Key Topics</h3>
+                    <p>Navigate through sections covering the Core Beliefs (Aqidah), the Five Pillars of Islam, daily practices, and valuable resources to deepen your knowledge.</p>
                 </div>
                 <div class="info-card">
-                    <h3><a href="practice.html">Daily Practice</a></h3>
-                    <p>Guidance on integrating Islam into everyday life.</p>
-                </div>
-                <div class="info-card">
-                    <h3><a href="resources.html">Useful Resources</a></h3>
-                    <p>Find links to beneficial Islamic learning materials.</p>
-                </div>
-                <div class="info-card">
-                    <h3><a href="product.html">Islamic Jurisprudence</a></h3>
-                    <p>Deepen your understanding with our comprehensive course.</p>
+                    <h3>Community & Support</h3>
+                    <p>Remember, you are not alone on this journey. Seek out local mosques, Islamic centers, and online communities for guidance and companionship.</p>
                 </div>
             </div>
+            <p>We pray that this resource aids you in drawing closer to Allah (God) and finding peace and clarity in your faith. May your journey be blessed!</p>
         </section>
     </main>
 
@@ -66,12 +53,12 @@
     <script>
         // Simple script to highlight active nav link based on current page
         document.addEventListener('DOMContentLoaded', () => {
-            const currentPath = window.location.pathname.split('/').pop(); // Gets 'index.html', 'pillars.html', etc.
+            const currentPath = window.location.pathname.split('/').pop();
             const navLinks = document.querySelectorAll('nav ul li a');
 
             navLinks.forEach(link => {
                 link.classList.remove('active');
-                if (link.getAttribute('href') === currentPath || (currentPath === '' && link.getAttribute('href') === 'index.html')) {
+                if (link.getAttribute('href') === currentPath) {
                     link.classList.add('active');
                 }
             });
