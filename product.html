@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Islamic Jurisprudence Course - Journey to Islam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Journey to Islam</h1>
+        <p>Your Comprehensive Guide for Muslim Reverts</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="pillars.html">Pillars of Islam</a></li>
+            <li><a href="beliefs.html">Core Beliefs</a></li>
+            <li><a href="practice.html">Daily Practice</a></li>
+            <li><a href="resources.html">Resources</a></li>
+            <li><a href="product.html" class="active">Jurisprudence Course</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="product" class="product-section">
+            <h2>Deepen Your Understanding: Islamic Jurisprudence Course</h2>
+            <p class="product-intro">As you grow in your faith, understanding the practical rulings of Islam becomes essential. Our "Essentials of Islamic Jurisprudence (Fiqh)" course offers a foundational and comprehensive guide to help you navigate daily life according to Islamic principles.</p>
+            <div class="product-details">
+                <img src="https://assets.gumroad.com/uploads/product/thumbnail/3a9a14c33f28f149b14041b31a89c44c885834ad/thumbnail_desktop.jpg" alt="Islamic Jurisprudence Course Thumbnail" class="product-image">
+                <div class="product-description">
+                    <h3>"Essentials of Islamic Jurisprudence (Fiqh)"</h3>
+                    <p>This course is meticulously designed to be accessible and highly beneficial for new Muslims and those seeking to solidify their practical understanding of Islam. Fiqh covers the practical application of Islamic law, derived from the Quran and Sunnah (Prophet's traditions).</p>
+                    <p><strong>What you'll learn in this course:</strong></p>
+                    <ul>
+                        <li><strong>Introduction to Fiqh:</strong> Its importance, sources, and methodologies in deriving rulings.</li>
+                        <li><strong>Purification (Taharah):</strong> Detailed rulings on Wudu (ablution), Ghusl (ritual bath), and Tayammum (dry ablution). Essential for prayer and purity.</li>
+                        <li><strong>Prayer (Salah):</strong> Comprehensive guidance on the conditions, integrals, sunnah acts, and common mistakes in the five daily prayers.</li>
+                        <li><strong>Fasting (Sawm):</strong> Regulations for fasting during Ramadan, including valid excuses, things that break the fast, and compensation.</li>
+                        <li><strong>Zakat (Charity):</strong> Basic understanding of obligatory charity, who is eligible to pay, and who is eligible to receive.</li>
+                        <li><strong>Brief overview of Islamic Transactions:</strong> Introduction to halal and haram in financial dealings.</li>
+                        <li><strong>And much more!</strong> Practical insights into everyday Islamic life.</li>
+                    </ul>
+                    <p>Gain confidence in practicing Islam correctly and authentically. This course is your step-by-step guide to mastering the fundamentals of Fiqh, empowering you to live a life aligned with divine guidance.</p>
+                </div>
+                <a href="https://ummumulkheiyr.gumroad.com/l/Islamicjurisprudence?_gl=1*2veohx*_ga*MTA4MjU3NTQ2NS4xNzQ4MzczOTY4*_ga_6LJN6D94N6*czE3NDg1Mjk3MzQkbzckZzEkdDE3NDg1MzEwMTAkajE0JGwwJGgw" target="_blank" class="buy-button">Learn More & Get the Course Now!</a>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Journey to Islam. All rights reserved. | Built with Peace & Knowledge</p>
+    </footer>
+
+    <script>
+        // Simple script to highlight active nav link based on current page
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
