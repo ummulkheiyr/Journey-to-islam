@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Useful Resources for Reverts - Journey to Islam</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=Amiri:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Journey to Islam</h1>
+        <p>Your Comprehensive Guide for Muslim Reverts</p>
+    </header>
+
+    <nav>
+        <ul>
+            <li><a href="index.html">Welcome</a></li>
+            <li><a href="pillars.html">Pillars of Islam</a></li>
+            <li><a href="beliefs.html">Core Beliefs</a></li>
+            <li><a href="practice.html">Daily Practice</a></li>
+            <li><a href="resources.html" class="active">Resources</a></li>
+            <li><a href="product.html">Jurisprudence Course</a></li>
+        </ul>
+    </nav>
+
+    <main class="container">
+        <section id="resources" class="section">
+            <h2>Useful Resources for Reverts</h2>
+            <p>Embarking on the journey of Islam is a continuous learning process. Here are some types of resources that can further aid your understanding, practice, and connection with the faith. Always prioritize authentic and reputable sources.</p>
+            <div class="info-grid">
+                <div class="info-card">
+                    <h3>Local Mosques & Islamic Centers</h3>
+                    <p>Your local mosque or Islamic center is invaluable. They often offer classes for new Muslims, community events, study circles, and opportunities for mentorship. Connect with them for guidance and support.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Online Islamic Platforms & Apps</h3>
+                    <p>Numerous trusted websites and mobile applications offer Quran translations, Hadith collections, scholarly lectures, prayer times, and more. Look for platforms endorsed by reputable Islamic institutions.</p>
+                    <p><em>(Consider adding specific links here once you identify them, e.g., "Quran.com for Quran translation," "Sunnah.com for Hadith," etc.)</em></p>
+                </div>
+                <div class="info-card">
+                    <h3>Introductory Islamic Books</h3>
+                    <p>Start with books that provide a comprehensive yet easy-to-understand overview of Islam, the life of Prophet Muhammad (Seerah), and basic Fiqh (Islamic jurisprudence). Many publishers offer revert-friendly titles.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Trusted Scholars & Teachers</h3>
+                    <p>Seek knowledge from qualified, knowledgeable, and balanced Islamic scholars and teachers. Attend their lectures (online or in-person) and consult them for questions about Islamic rulings and understanding.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Revert Support Groups</h3>
+                    <p>Connecting with other Muslim reverts, whether through online forums or local groups, can provide immense comfort and support. Share experiences, ask questions in a safe space, and build a sense of community.</p>
+                </div>
+                <div class="info-card">
+                    <h3>Quran & Arabic Learning</h3>
+                    <p>Learning Arabic, the language of the Quran, can greatly deepen your understanding. Many online and in-person courses are available for beginners. Even learning basic Arabic phrases and letters is beneficial.</p>
+                </div>
+            </div>
+            <p>Remember, seeking knowledge is a continuous journey in Islam. May Allah facilitate your path and increase you in beneficial knowledge!</p>
+            <p><em>Disclaimer: Always verify information with authentic Islamic sources and knowledgeable scholars.</em></p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2025 Journey to Islam. All rights reserved. | Built with Peace & Knowledge</p>
+    </footer>
+
+    <script>
+        // Simple script to highlight active nav link based on current page
+        document.addEventListener('DOMContentLoaded', () => {
+            const currentPath = window.location.pathname.split('/').pop();
+            const navLinks = document.querySelectorAll('nav ul li a');
+
+            navLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === currentPath) {
+                    link.classList.add('active');
+                }
+            });
+        });
+    </script>
+</body>
+</html>
